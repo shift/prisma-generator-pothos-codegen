@@ -14,11 +14,6 @@
     "workarounds:all",
     "github>whitesource/merge-confidence:beta"
   ],
-  "packageRules": [
-    {
-      "matchBaseBranches": "/^CUR-.*/"
-    }
-  ],
   "rangeStrategy": "bump",
   "postUpdateOptions": [
     "yarnDedupeHighest"
