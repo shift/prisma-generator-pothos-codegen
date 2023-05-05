@@ -31,4 +31,4 @@ jobs:
     with:
       node-version: 18.16.0
     secrets:
-      node-auth-token: ${{ secrets.NPM_TOKEN }}
+      node-auth-token: ${{ secrets.GITHUB_TOKEN }}
