@@ -33,13 +33,13 @@ jobs:
   publish:
     id: publish
     uses: slsa-framework/slsa-github-generator/actions/nodejs/publish@7f4fdb871876c23e455853d694197440c5a91506 # v1.5.0
-     with:
-       access: public
-       node-auth-token: ${{ secrets.GITHUB_TOKEN }}
-       package-name: ${{ needs.build.outputs.package-name }}
-       package-download-name: ${{ needs.build.outputs.package-download-name }}
-       package-download-sha256: ${{ needs.build.outputs.package-download-sha256 }}
-       provenance-name: ${{ needs.build.outputs.provenance-name }}
-       provenance-download-name: ${{ needs.build.outputs.provenance-download-name }}
-       provenance-download-sha256: ${{ needs.build.outputs.provenance-download-sha256 }}
+    with:
+      access: public
+      node-auth-token: ${{ secrets.GITHUB_TOKEN }}
+      package-name: ${{ needs.build.outputs.package-name }}
+      package-download-name: ${{ needs.build.outputs.package-download-name }}
+      package-download-sha256: ${{ needs.build.outputs.package-download-sha256 }}
+      provenance-name: ${{ needs.build.outputs.provenance-name }}
+      provenance-download-name: ${{ needs.build.outputs.provenance-download-name }}
+      provenance-download-sha256: ${{ needs.build.outputs.provenance-download-sha256 }}
 
