@@ -27,7 +27,7 @@ jobs:
       contents: write # for uploading attestations.
       actions: read
     needs: prepare
-    uses: slsa-framework/slsa-github-generator/.github/workflows/builder_nodejs_slsa3.yml@d377044abc3274a420a70e95ca65a22c95c04dbe
+    uses: slsa-framework/slsa-github-generator/.github/workflows/builder_nodejs_slsa3.yml@5d8abca5a8fc09ce3ff95102112ac8e5abf89492
     with:
       node-version: 18.16.0
   publish:
