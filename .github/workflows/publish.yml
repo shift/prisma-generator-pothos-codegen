@@ -31,11 +31,14 @@ jobs:
     with:
       node-version: 18.16.0
   publish:
+    needs: build
     runs-on: ubuntu-latest
     strategy:
       matrix:
         node-version: [18.x]
     steps:
+      - name: Checkout
+        uses: actions/checkout@v3
       - name: Publish
         uses: slsa-framework/slsa-github-generator/actions/nodejs/publish@7f4fdb871876c23e455853d694197440c5a91506 # v1.5.0
         with:
