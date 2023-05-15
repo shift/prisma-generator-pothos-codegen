@@ -40,7 +40,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
       - name: Publish
-        uses: slsa-framework/slsa-github-generator/actions/nodejs/publish@7f4fdb871876c23e455853d694197440c5a91506 # v1.5.0
+        uses: slsa-framework/slsa-github-generator/actions/nodejs/publish@0779f7bec68e2bf54a7b0a32bf4763f25ab29702 # v1.6.0
         with:
           access: public
           node-auth-token: ${{ secrets.GITHUB_TOKEN }}
