@@ -10,7 +10,7 @@ jobs:
       matrix:
         node-version: [18.x]
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       - name: Build on Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v3
         with:
@@ -38,7 +38,7 @@ jobs:
         node-version: [18.x]
     steps:
       - name: Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
       - name: Publish
         uses: slsa-framework/slsa-github-generator/actions/nodejs/publish@e55b76ce421082dfa4b34a6ac3c5e59de0f3bb58 # v1.7.0
         with:
